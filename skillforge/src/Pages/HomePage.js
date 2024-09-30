@@ -1,9 +1,9 @@
 import React from "react";
 
-import NavbarComponent from "../components/NavbarComponent"; // Corrected path
-import Hero from "../components/Hero"; // Corrected path
+import NavbarComponent from "../Components/NavbarComponent"; // Corrected path
+import Hero from "../Components/Hero"; // Corrected path
 
-function Home() {
+function HomePage() {
   const heroData = {
     "/": {
       title: "SkillForge I.T",
@@ -24,7 +24,6 @@ function Home() {
 
   return (
     <div>
-      <h1>Welcome to My App</h1>
       <NavbarComponent />
       <Hero
         title={heroData[currentPage]?.title || "Default Title"} // Add fallback if heroData[currentPage] is undefined
@@ -34,4 +33,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

@@ -2,19 +2,19 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Home from "./pages/home";
-import Courses from "./pages/Courses";
-import Enroll from "./pages/Enroll";
-import About from "./pages/About";
+import Courses from "./Pages/Courses";
+import Enroll from "./Pages/Enroll";
+import About from "./Pages/About";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/courses" component={Courses} />
-        <Route path="/enroll" component={Enroll} />
-        <Route path="/about" component={About} />
+        <Route index element={<HomePage />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/enroll" element={<Enroll />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
