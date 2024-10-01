@@ -1,0 +1,83 @@
+.hero-sect-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding: 50px;
+  height: 600px;
+  border-radius: 25px;
+
+  /* bg
+  
+  rgb(141, 252, 14);*/
+  background: linear-gradient(
+    26deg,
+    rgba(255, 255, 255, 0.069),
+    rgba(0, 0, 0, 0)
+  );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.hero-header {
+  font-family: "Jersey 20", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 128px;
+  margin-top: 75px;
+}
+.tag-line {
+  padding-top: -15px;
+}
+
+.right.copy {
+  padding-left: -175px;
+}
+
+.copy {
+  margin-top: 65%;
+  text-align: end;
+}
+
+.buttonCTA.btn.btn-primary {
+  background-color: rgba(141, 252, 14, 0) !important;
+  width: 250px;
+  height: 35px;
+  padding-top: 5px;
+  border: 1px solid rgba(141, 252, 14);
+  border-radius: 50px !important;
+  color: white;
+
+  cursor: pointer;
+  transition: all 1000ms;
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.buttonCTA.btn.btn-primary:hover {
+  background-color: rgb(141, 252, 14) !important;
+  width: 250px;
+  height: 35px;
+  padding-top: 5px;
+  border-radius: 50px !important;
+  border: none;
+  color: black;
+
+  text-align: center;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}

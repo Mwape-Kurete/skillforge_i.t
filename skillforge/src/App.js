@@ -7,6 +7,8 @@ import Enroll from "./Pages/Enroll";
 import About from "./Pages/About";
 import HomePage from "./Pages/HomePage";
 
+import "./Styles/main.css";
+
 function App() {
   return (
     <div>
