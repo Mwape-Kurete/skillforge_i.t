@@ -1,94 +1,144 @@
 import React from "react";
 
 import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
+import { Col, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 
 function CourseCards() {
   return (
-    <CardGroup className="overflow-auto py-2 mx-5">
-      <Card border="primary" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card border="secondary" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{" "}
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card border="success" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card border="danger" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card border="warning" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card border="dark" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
+    <Row className="courses-all-cont">
+      <Col md={6}>
+        <Card className="course-cards">
+          <Card.Header>A+ Bootcamp (4 Months)</Card.Header>
+          <Card.Body>
+            <Card.Title>
+              This bootcamp prepares students for the CompTIA A+ certification
+              exam, focusing on hardware, networking, and troubleshooting.
+            </Card.Title>
+            <Card.Text>
+              <ol>
+                <li>
+                  Month 1: Introduction to hardware components, system
+                  architecture.
+                </li>
+                <li>
+                  Month 2: Networking essentials: IP addressing, routers, and
+                  switches.
+                </li>
+                <li>
+                  Month 3: Operating systems: Windows, Linux, and MacOS
+                  troubleshooting.
+                </li>
+                <li>
+                  Month 4: Security fundamentals, maintenance, and preparation
+                  for the CompTIA A+ exam.
+                </li>
+              </ol>
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+
+      <Col md={6}>
+        <Card className="course-cards">
+          <Card.Header>A+ Bootcamp (4 Months)</Card.Header>
+          <Card.Body>
+            <Card.Title>
+              This bootcamp prepares students for the CompTIA A+ certification
+              exam, focusing on hardware, networking, and troubleshooting.
+            </Card.Title>
+            <Card.Text>
+              <ol>
+                <li>
+                  Month 1: Introduction to hardware components, system
+                  architecture.
+                </li>
+                <li>
+                  Month 2: Networking essentials: IP addressing, routers, and
+                  switches.
+                </li>
+                <li>
+                  Month 3: Operating systems: Windows, Linux, and MacOS
+                  troubleshooting.
+                </li>
+                <li>
+                  Month 4: Security fundamentals, maintenance, and preparation
+                  for the CompTIA A+ exam.
+                </li>
+              </ol>
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+
+      <Col md={6}>
+        <Card className="course-cards">
+          <Card.Header>A+ Bootcamp (4 Months)</Card.Header>
+          <Card.Body>
+            <Card.Title>
+              This bootcamp prepares students for the CompTIA A+ certification
+              exam, focusing on hardware, networking, and troubleshooting.
+            </Card.Title>
+            <Card.Text>
+              <ol>
+                <li>
+                  Month 1: Introduction to hardware components, system
+                  architecture.
+                </li>
+                <li>
+                  Month 2: Networking essentials: IP addressing, routers, and
+                  switches.
+                </li>
+                <li>
+                  Month 3: Operating systems: Windows, Linux, and MacOS
+                  troubleshooting.
+                </li>
+                <li>
+                  Month 4: Security fundamentals, maintenance, and preparation
+                  for the CompTIA A+ exam.
+                </li>
+              </ol>
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+
+      <Col md={6}>
+        <Card className="course-cards">
+          <Card.Header>A+ Bootcamp (4 Months)</Card.Header>
+          <Card.Body>
+            <Card.Title>
+              This bootcamp prepares students for the CompTIA A+ certification
+              exam, focusing on hardware, networking, and troubleshooting.
+            </Card.Title>
+            <Card.Text>
+              <ol>
+                <li>
+                  Month 1: Introduction to hardware components, system
+                  architecture.
+                </li>
+                <li>
+                  Month 2: Networking essentials: IP addressing, routers, and
+                  switches.
+                </li>
+                <li>
+                  Month 3: Operating systems: Windows, Linux, and MacOS
+                  troubleshooting.
+                </li>
+                <li>
+                  Month 4: Security fundamentals, maintenance, and preparation
+                  for the CompTIA A+ exam.
+                </li>
+              </ol>
+            </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
   );
 }
 

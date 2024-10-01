@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 function FooterComponent() {
   return (
     <Row className="footer-cont">
-      <Col>
+      {/* <Col>
         <h1>SkillForge I.T</h1>
       </Col>
       <Col>
@@ -19,7 +19,7 @@ function FooterComponent() {
             </Card.Text>
           </Card.Body>
         </Card>
-      </Col>
+      </Col> */}
     </Row>
   );
 }

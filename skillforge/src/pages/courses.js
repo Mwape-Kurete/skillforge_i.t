@@ -8,6 +8,7 @@ import FooterComponent from "../Components/FooterComponent.js";
 
 import CourseCards from "../Components/CourseCards.js";
 import { CardGroup } from "react-bootstrap";
+import "../Styles/courses.css";
 
 function Courses() {
   const heroData = {
@@ -30,13 +31,10 @@ function Courses() {
   return (
     <Container>
       <NavbarComponent />
-      <Hero
-        title={heroData[currentPage]?.title || "Default Title"} // Add fallback if heroData[currentPage] is undefined
-        subtitle={heroData[currentPage]?.subtitle || "Default Subtitle"}
-      />
+
       <br />
-      <Row>
-        <h1>Our Courses</h1>
+      <Row className="courses-cont">
+        <h1 className="course-head">Our Courses</h1>
         <Col>
           <CourseCards />
         </Col>

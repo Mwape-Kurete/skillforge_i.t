@@ -1,0 +1,62 @@
+.courses-cont-all {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses-cont {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding: 50px;
+  height: 80%;
+  border-radius: 25px;
+
+  /* bg
+  
+  rgb(141, 252, 14);*/
+  background: linear-gradient(
+    26deg,
+    rgba(255, 255, 255, 0.069),
+    rgba(0, 0, 0, 0)
+  );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.card-header {
+  padding: 35px;
+}
+
+.card-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding: 10px;
+}
+
+.course-cards {
+  margin: 15px;
+  padding-right: 10px;
+  width: 600px;
+  height: 900px;
+  margin: 15px;
+
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(235deg, transparent 45%, #1cff2b, #40dfff) border-box !important;
+  border: 2px solid transparent;
+
+  color: white !important;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+ol > li {
+  padding: 10px;
+}
