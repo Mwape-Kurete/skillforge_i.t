@@ -3,7 +3,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import NavbarComponent from "../Components/NavbarComponent";
 import { Row, Col } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
 import FooterComponent from "../Components/FooterComponent";
 import FormComp from "../Components/FormComp";
 import AccordionComponent from "../Components/AccordionComponent";
@@ -29,7 +28,18 @@ function Enroll() {
 
       <Row>
         <h1>Get In Touch</h1>
-        <Col></Col>
+        <Col>
+          <h1>email</h1>
+        </Col>
+        <Col>
+          <h1>ig</h1>
+        </Col>
+        <Col>
+          <h1>X</h1>
+        </Col>
+        <Col>
+          <h1>facebook</h1>
+        </Col>
       </Row>
       <br />
       <FooterComponent />
