@@ -1,7 +1,11 @@
 import React from "react";
 
-import NavbarComponent from "../Components/NavbarComponent"; // Corrected path
-import Hero from "../Components/Hero"; // Corrected path
+import Container from "react-bootstrap/Container";
+import NavbarComponent from "../Components/NavbarComponent";
+import Hero from "../Components/Hero";
+import KeyFeatures from "../Components/KeyFeatures";
+import Testimonials from "../Components/Testimonials.js";
+import FooterComponent from "../Components/FooterComponent.js";
 
 function HomePage() {
   const heroData = {
@@ -19,17 +23,22 @@ function HomePage() {
     },
   };
 
-  // Define currentPage, it should default to '/' if you're on the home page
-  const currentPage = window.location.pathname; // Get current path
+  const currentPage = window.location.pathname;
 
   return (
-    <div>
+    <Container>
       <NavbarComponent />
       <Hero
         title={heroData[currentPage]?.title || "Default Title"} // Add fallback if heroData[currentPage] is undefined
         subtitle={heroData[currentPage]?.subtitle || "Default Subtitle"}
       />
-    </div>
+      <br />
+      <KeyFeatures />
+      <br />
+      <Testimonials />
+      <br />
+      <FooterComponent />
+    </Container>
   );
 }
 

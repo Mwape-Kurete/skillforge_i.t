@@ -27,9 +27,6 @@ function NavbarComponent() {
             <Nav.Link as={Link} to="/about">
               About Us
             </Nav.Link>
-            <Nav.Link as={Link} to="/enroll">
-              Enroll
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
