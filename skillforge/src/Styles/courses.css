@@ -47,7 +47,7 @@
   margin: 15px;
 
   background: linear-gradient(#212121, #212121) padding-box,
-    linear-gradient(235deg, transparent 45%, #1cff2b, #40dfff) border-box !important;
+    linear-gradient(135deg, transparent 45%, #1cff2b, #d6ff40) border-box !important;
   border: 2px solid transparent;
 
   color: white !important;
