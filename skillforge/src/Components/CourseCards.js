@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function CourseCards() {
   return (
     <Row className="courses-all-cont">
-      <Col md={6} className="course-col">
+      <Col md={6} className="course-col my-5">
         <Card className="course-cards">
           <Card.Header>A+ Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -47,7 +47,7 @@ function CourseCards() {
         </Card>
       </Col>
 
-      <Col md={6} className="course-col">
+      <Col md={6} className="course-col  my-5">
         <Card className="course-cards">
           <Card.Header>Python Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -83,7 +83,7 @@ function CourseCards() {
         </Card>
       </Col>
 
-      <Col md={6} className="course-col">
+      <Col md={6} className="course-col  my-5">
         <Card className="course-cards">
           <Card.Header>React Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -118,7 +118,7 @@ function CourseCards() {
         </Card>
       </Col>
 
-      <Col md={6} className="course-col">
+      <Col md={6} className="course-col  my-5">
         <Card className="course-cards">
           <Card.Header>ICDL Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -153,7 +153,7 @@ function CourseCards() {
         </Card>
       </Col>
 
-      <Col md={6} className="course-col">
+      <Col md={6} className="course-col  my-5">
         <Card className="course-cards">
           <Card.Header>Java Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -187,7 +187,7 @@ function CourseCards() {
           </Card.Body>
         </Card>
       </Col>
-      <Col md={6} className="course-col">
+      <Col md={6} className="course-col  my-5">
         <Card className="course-cards">
           <Card.Header>Project Management Bootcamp (4 Months)</Card.Header>
           <Card.Body>

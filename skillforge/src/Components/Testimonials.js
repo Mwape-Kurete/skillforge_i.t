@@ -8,7 +8,7 @@ function Testimonials() {
   return (
     <Row className="whole-tests">
       <Col className="tests-header">
-        <h1>Testimonials</h1>
+        <h1 className="testi-head">Testimonials</h1>
       </Col>
       <Row className="mb-3">
         <Col className="cards-tests-scroll">

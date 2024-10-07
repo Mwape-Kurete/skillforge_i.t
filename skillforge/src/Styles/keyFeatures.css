@@ -1,28 +1,49 @@
 .key-feat {
   margin-bottom: 100px;
+  background: linear-gradient(
+    26deg,
+    rgba(255, 255, 255, 0.069),
+    rgba(0, 0, 0, 0)
+  );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .key-features-header {
   padding: 50px;
+  color: rgba(141, 252, 14);
+  ext-align: center;
 }
 
 h1 {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   font-style: italic;
+
+  text-align: center;
 }
-.cont {
+.cont.col-md-6 {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 50px;
 }
 
-.cont .features {
+.cont > .features {
+  text-align: center;
   position: relative;
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 100px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   padding: 50px;
+  padding-bottom: 50px;
   background: linear-gradient(#fff2, transparent);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
@@ -35,10 +56,11 @@ h1 {
   transform: rotate(calc(var(--r) * 1deg));
 }
 
-.cont .features:hover {
+.cont > .features:hover {
   transform: rotate(0deg);
   margin: 0 50px;
   width: 600px;
+  height: 200px;
   cursor: pointer;
 }
 

@@ -5,18 +5,22 @@ import "../Styles/keyFeatures.css";
 function KeyFeatures() {
   return (
     <Row className="key-feat">
-      <Col className="key-features-header">
+      <Col className="key-features-header col-12">
         <h1>What Sets Us Apart</h1>
       </Col>
-      <Col className="cont">
+      <Col md={6} className="cont">
         <div className="features">
           <h1>Industry-Recognized Certifications: </h1>
           <p>Gain certifications in A+, ICDL, and Project Management.</p>
         </div>
+      </Col>
+      <Col md={6} className="cont">
         <div className="features">
           <h1>Experienced Instructors: </h1>
           <p> Learn from IT experts with years of industry experience.</p>
         </div>
+      </Col>
+      <Col md={6} className="cont">
         <div className="features">
           <h1>Hands-on Learning:</h1>
           <p>
@@ -24,6 +28,8 @@ function KeyFeatures() {
             skills.
           </p>
         </div>
+      </Col>
+      <Col md={6} className="cont">
         <div className="features">
           <h1>Flexible Schedule: </h1>
           <p> Online courses designed to fit your schedule.</p>

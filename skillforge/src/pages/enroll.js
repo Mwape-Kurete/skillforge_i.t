@@ -12,7 +12,7 @@ function Enroll() {
     <Container>
       <NavbarComponent />
       <br />
-      <Row>
+      <Row className="py-5">
         <h1>Enroll Now!</h1>
         <Col>
           <FormComp />

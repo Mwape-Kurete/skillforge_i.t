@@ -7,7 +7,7 @@ import "../Styles/form.css";
 
 function FormComp() {
   return (
-    <div className="d-flex justify-content-center align-items-center">
+    <div className="d-flex justify-content-center align-items-center form-whole-cont">
       <Form className="form-">
         <Row className="mb-3">
           <Form.Group as={Col} className="mb-3" controlId="formGridAddress1">
