@@ -39,11 +39,11 @@
   padding: 10px;
 }
 
-.course-cards {
+.course-cards.card {
   margin: 15px;
-  padding-right: 10px;
-  width: 600px;
-  height: 900px;
+  padding: 35px;
+  width: 400px;
+  height: 100%;
   margin: 15px;
 
   background: linear-gradient(#212121, #212121) padding-box,
@@ -59,4 +59,67 @@
 
 ol > li {
   padding: 10px;
+}
+
+.course-col.col.md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enroll-now-cta {
+  background-color: rgba(141, 252, 14, 0) !important;
+  width: 250px;
+  height: 35px;
+  padding-top: 5px;
+  border: 1px solid rgba(141, 252, 14) !important;
+  border-radius: 50px !important;
+
+  cursor: pointer;
+  transition: all 600ms !important;
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+  align-self: center;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.enroll-now-cta > a {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+
+.enroll-now-cta:hover {
+  background-color: rgb(141, 252, 14) !important;
+  width: 250px;
+  height: 35px;
+  padding-top: 5px;
+  border-radius: 50px !important;
+  border: none;
+
+  text-align: center;
+  align-self: center;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.enroll-now-cta > a:hover {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
