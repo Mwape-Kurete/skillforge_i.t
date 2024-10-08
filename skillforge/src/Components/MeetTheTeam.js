@@ -10,13 +10,16 @@ function MeetTheTeam() {
         <div className="team-deets">
           <div className="card">
             <div className="card-image"></div>
-            <div className="category"> Illustration </div>
+            <div className="category"> John Matthews</div>
             <div className="heading">
-              {" "}
-              A heading that must span over two lines
+              John has over 15 years of IT support and infrastructure
+              experience, specializing in hardware troubleshooting, networking,
+              and cybersecurity. CompTIA A+ certified, he has trained hundreds
+              of students for global tech companies.
               <div className="author">
                 {" "}
-                By <span className="name">Abi</span> 4 days ago
+                Position <span className="name">Lead Instructor</span>A+
+                Bootcamp
               </div>
             </div>
           </div>

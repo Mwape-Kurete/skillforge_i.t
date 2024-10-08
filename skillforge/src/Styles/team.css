@@ -1,6 +1,7 @@
 /* From Uiverse.io by alexmaracinaru */
 .card {
-  width: 190px;
+  width: 350px;
+  margin: 25px;
   background: white;
   padding: 0.4em;
   border-radius: 6px;
