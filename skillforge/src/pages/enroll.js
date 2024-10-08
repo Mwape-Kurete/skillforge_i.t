@@ -6,6 +6,11 @@ import { Row, Col } from "react-bootstrap";
 import FooterComponent from "../Components/FooterComponent";
 import FormComp from "../Components/FormComp";
 import AccordionComponent from "../Components/AccordionComponent";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+import "../Styles/enroll.css";
+
+import Card from "react-bootstrap/Card";
 
 function Enroll() {
   return (
@@ -25,20 +30,32 @@ function Enroll() {
           <AccordionComponent />
         </Col>
       </Row>
+      <br />
 
       <Row>
-        <h1>Get In Touch</h1>
-        <Col>
-          <h1>email</h1>
-        </Col>
-        <Col>
-          <h1>ig</h1>
-        </Col>
-        <Col>
-          <h1>X</h1>
-        </Col>
-        <Col>
-          <h1>facebook</h1>
+        <Col
+          xs={12}
+          className="in-touch d-flex justify-content-center align-self-center"
+        >
+          <Card className="socials">
+            <Card.Header>Get in Touch</Card.Header>
+            <Card.Body>
+              <Row>
+                <Col className="text-align-center">
+                  <i className="bi bi-instagram "></i>
+                </Col>
+                <Col>
+                  <i className="bi bi-envelope-at"></i>
+                </Col>
+                <Col>
+                  <i className="bi bi-twitter-x"></i>
+                </Col>
+                <Col>
+                  <i className="bi bi-facebook"></i>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
       <br />

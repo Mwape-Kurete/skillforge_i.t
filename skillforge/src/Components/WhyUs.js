@@ -6,10 +6,10 @@ function WhyUs() {
     <Row>
       <h1>Why Choose Us?</h1>
       <Col>
-        <h3>statement.</h3>
+        <h3>Affordable, intensive, and designed for real-world application.</h3>
       </Col>
       <Col>
-        <h3>statement.</h3>
+        <h3>Curriculum aligned with the latest industry standards.</h3>
       </Col>
     </Row>
   );
