@@ -15,7 +15,7 @@ function About() {
       <NavbarComponent />
       <br />
       <Row>
-        <Col className="col-12 mission">
+        <Col className="col-12 mission text-align-center">
           <h1>Our Mission: </h1>
           <p>
             At SkillForge I.T, we aim to bridge the skills gap in the IT
@@ -29,7 +29,7 @@ function About() {
         <Col className="col-12 meet">
           <MeetTheTeam />
         </Col>
-        <Col className="col-12 students">
+        <Col className="col-12 students text-align-center">
           <h1>Our Students: </h1>
           <p>
             From beginners to experienced professionals, our bootcamps cater to

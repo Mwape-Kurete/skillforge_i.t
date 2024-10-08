@@ -1,9 +1,8 @@
-.testimnal {
+.testimonial {
   width: 300px;
-  height: 200px;
-  background-color: #4158d0;
+  height: 100%;
   border-radius: 8px;
-  color: white;
+  color: white !important;
   overflow: hidden;
   position: relative;
   transform-style: preserve-3d;
@@ -15,17 +14,15 @@
 .testi-head {
   padding: 20px;
   margin-bottom: 30px;
-  color: rgba(141, 252, 14);
+  color: white;
 }
 
-.card-tests {
-  background: linear-gradient(
-    26deg,
-    rgba(255, 107, 193, 0.197),
-    rgba(0, 0, 0, 0)
-  );
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+.card-tests.card {
+  margin: 35px;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(189deg, transparent 45%, rgb(28, 255, 43), #d6ff40)
+      border-box !important;
+  border: 2px solid transparent;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   padding: 20px;

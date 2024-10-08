@@ -1,7 +1,7 @@
 .in-touch.col-12 {
   margin-top: 150px;
 }
-.socials {
+.socials-card {
   width: 80%;
   background: linear-gradient(
     26deg,
@@ -13,7 +13,7 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 
-  color: rgb(28, 255, 43);
+  color: rgb(28, 255, 43) !important;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-style: normal;

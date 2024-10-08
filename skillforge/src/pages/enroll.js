@@ -37,7 +37,7 @@ function Enroll() {
           xs={12}
           className="in-touch d-flex justify-content-center align-self-center"
         >
-          <Card className="socials">
+          <Card className="socials-card">
             <Card.Header>Get in Touch</Card.Header>
             <Card.Body>
               <Row>

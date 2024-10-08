@@ -2,7 +2,7 @@
 .card {
   width: 350px;
   margin: 25px;
-  background: white;
+  background-color: #212121 !important;
   padding: 0.4em;
   border-radius: 6px;
 }
@@ -21,8 +21,10 @@
 .category {
   text-transform: uppercase;
   font-size: 0.7em;
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
-  color: rgb(63, 121, 230);
+  font-style: normal;
+  color: rgb(28, 255, 43);
   padding: 10px 7px 0;
 }
 
@@ -31,7 +33,9 @@
 }
 
 .heading {
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
+  font-style: normal;
   color: rgb(88, 87, 87);
   padding: 7px;
 }
@@ -44,11 +48,16 @@
   color: gray;
   font-weight: 400;
   font-size: 11px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-top: 20px;
 }
 
 .name {
   font-weight: 600;
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
 }
 
 .name:hover {
