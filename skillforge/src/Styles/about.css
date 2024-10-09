@@ -101,3 +101,23 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
+
+.carousel {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.carousel-item {
+  width: 80%;
+  height: 500px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.caro-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  top: 20px;
+}

@@ -1,6 +1,12 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "../Styles/team.css";
+import John from "../Assets/JohnMatthews.jpg";
+import David from "../Assets/DavidKyung.jpg";
+import Laura from "../Assets/LauraBennett.jpg";
+import Mark from "../Assets/MarkTaylor.jpg";
+import Rebecca from "../Assets/RebeccaLee.jpg";
+import Sophia from "../Assets/SophiaGreen.jpg";
 
 function MeetTheTeam() {
   return (
@@ -9,7 +15,9 @@ function MeetTheTeam() {
       <Col>
         <div className="team-deets">
           <div className="card">
-            <div className="card-image"></div>
+            <div className="card-image">
+              <img src={John} alt="John Matthews Portfolio Shot" />
+            </div>
             <div className="category"> John Matthews</div>
             <div className="heading">
               John has over 15 years of IT support and infrastructure
@@ -28,7 +36,9 @@ function MeetTheTeam() {
       <Col>
         <div className="team-deets">
           <div className="card">
-            <div className="card-image"></div>
+            <div className="card-image">
+              <img src={Rebecca} alt="Rebecca Lee Portfolio Shot" />
+            </div>
             <div className="category"> Rebecca Lee </div>
             <div className="heading">
               {" "}
@@ -48,7 +58,9 @@ function MeetTheTeam() {
       <Col>
         <div className="team-deets">
           <div className="card">
-            <div className="card-image"></div>
+            <div className="card-image">
+              <img src={Mark} alt="Mark Taylor Portfolio Shot" />
+            </div>
             <div className="category"> Mark Taylor </div>
             <div className="heading">
               {" "}
@@ -68,7 +80,9 @@ function MeetTheTeam() {
       <Col>
         <div className="team-deets">
           <div className="card">
-            <div className="card-image"></div>
+            <div className="card-image">
+              <img src={Sophia} alt="Sophia Green Portfolio Shot" />
+            </div>
             <div className="category"> Sophia Green </div>
             <div className="heading">
               {" "}
@@ -88,8 +102,10 @@ function MeetTheTeam() {
       <Col>
         <div className="team-deets">
           <div className="card">
-            <div className="card-image"></div>
-            <div className="category"> David White </div>
+            <div className="card-image">
+              <img src={David} alt="David Kyung Portfolio Shot" />
+            </div>
+            <div className="category"> David Kyung </div>
             <div className="heading">
               {" "}
               David is a software engineer with 12 years of enterprise-level
@@ -108,7 +124,9 @@ function MeetTheTeam() {
       <Col>
         <div className="team-deets">
           <div className="card">
-            <div className="card-image"></div>
+            <div className="card-image">
+              <img src={Laura} alt="Laura Bennett Portfolio Shot" />
+            </div>
             <div className="category"> Laura Bennett </div>
             <div className="heading">
               {" "}

@@ -4,6 +4,13 @@ import Container from "react-bootstrap/Container";
 import { Row, Col } from "react-bootstrap";
 import NavbarComponent from "../Components/NavbarComponent";
 
+import Carousel from "react-bootstrap/Carousel";
+import Img1 from "../Assets/student1.jpg";
+import Img2 from "../Assets/student2.jpg";
+import Img3 from "../Assets/student3.jpg";
+import Img4 from "../Assets/student4.jpg";
+import Img5 from "../Assets/student5.jpg";
+
 import FooterComponent from "../Components/FooterComponent";
 import WhyUs from "../Components/WhyUs";
 import MeetTheTeam from "../Components/MeetTheTeam";
@@ -35,6 +42,38 @@ function About() {
             From beginners to experienced professionals, our bootcamps cater to
             all levels.
           </p>
+          <Row>
+            <Col className="student-caro d-flex justify-content-center align-items-center">
+              <Carousel className="d-flex justify-content-center align-items-center">
+                <Carousel.Item>
+                  <img className="caro-image" src={Img1} alt="First slide" />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="caro-image" src={Img2} alt="Second" />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="caro-image" src={Img3} alt="third" />
+                  <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>
+                      Praesent commodo cursus magna, vel scelerisque nisl
+                      consectetur.
+                    </p>
+                  </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="caro-image" src={Img4} alt="third" />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img className="caro-image" src={Img5} alt="third" />
+                  <Carousel.Caption></Carousel.Caption>
+                </Carousel.Item>
+              </Carousel>
+            </Col>
+          </Row>
         </Col>
       </Row>
       <FooterComponent />

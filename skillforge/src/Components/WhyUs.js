@@ -5,7 +5,8 @@ import "../Styles/whyus.css";
 function WhyUs() {
   return (
     <Row className="why-us-row">
-      <h1>Why Choose Us?</h1>
+      <h1 className="py-5">Why Choose Us?</h1>
+      <br />
       <Col>
         <div className="card-box">
           <div className="tools">
