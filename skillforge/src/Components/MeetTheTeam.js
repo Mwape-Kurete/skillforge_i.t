@@ -8,7 +8,21 @@ import Mark from "../Assets/MarkTaylor.jpg";
 import Rebecca from "../Assets/RebeccaLee.jpg";
 import Sophia from "../Assets/SophiaGreen.jpg";
 
+import { useEffect } from "react";
+
+function preloadImages(imageArray) {
+  imageArray.forEach((imageSrc) => {
+    const img = new Image();
+    img.src = imageSrc;
+  });
+}
+
 function MeetTheTeam() {
+  useEffect(() => {
+    // Preload images when the component mounts
+    preloadImages([John, David, Laura, Mark, Rebecca, Sophia]);
+  }, []);
+
   return (
     <Row>
       <h1>Meet The Team</h1>

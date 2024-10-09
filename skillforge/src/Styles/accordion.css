@@ -1,5 +1,40 @@
+.accordion-button:not(.collapsed) {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid white;
+}
+
+.accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-flush > .accordion-item > .accordion-header .accordion-button,
+.accordion-flush
+  > .accordion-item
+  > .accordion-header
+  .accordion-button.collapsed {
+  background-color: transparent;
+
+  border: none;
+  color: #1cff2b;
+}
+
 .accordion-item {
-  color: black;
+  color: white !important;
+  border: none !important;
+  background: linear-gradient(
+    26deg,
+    rgba(255, 255, 255, 0.069),
+    rgba(0, 0, 0, 0)
+  ) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px !important;
+
+  color: white;
+
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -9,11 +44,6 @@
 .accordion-flush > .accordion-item:first-child {
   border-radius: 10px;
   margin-bottom: 10px;
-
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .accordion-flush > .accordion-item:last-child {

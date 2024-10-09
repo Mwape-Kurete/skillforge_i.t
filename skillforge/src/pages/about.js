@@ -15,8 +15,20 @@ import FooterComponent from "../Components/FooterComponent";
 import WhyUs from "../Components/WhyUs";
 import MeetTheTeam from "../Components/MeetTheTeam";
 import "../Styles/about.css";
+import { useEffect } from "react";
+
+function preloadImages(imageArray) {
+  imageArray.forEach((imageSrc) => {
+    const img = new Image();
+    img.src = imageSrc;
+  });
+}
 
 function About() {
+  useEffect(() => {
+    // Preload images when the component mounts
+    preloadImages([Img1, Img2, Img3, Img4, Img5]);
+  }, []);
   return (
     <Container>
       <NavbarComponent />
