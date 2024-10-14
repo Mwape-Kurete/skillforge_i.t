@@ -1,6 +1,7 @@
 import React from "react";
-
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import NavbarComponent from "../Components/NavbarComponent";
 import Hero from "../Components/Hero";
 import KeyFeatures from "../Components/KeyFeatures";
@@ -26,17 +27,29 @@ function HomePage() {
   const currentPage = window.location.pathname;
 
   return (
-    <Container>
+    <Container fluid>
       <NavbarComponent />
-      <Hero
-        title={heroData[currentPage]?.title || "Default Title"} // Add fallback if heroData[currentPage] is undefined
-        subtitle={heroData[currentPage]?.subtitle || "Default Subtitle"}
-      />
-      <br />
-      <KeyFeatures />
-      <br />
-      <Testimonials />
-      <br />
+      <Row className="justify-content-center mt-4">
+        <Col xs={12} md={10} lg={8}>
+          <Hero
+            title={heroData[currentPage]?.title || "Default Title"}
+            subtitle={heroData[currentPage]?.subtitle || "Default Subtitle"}
+          />
+        </Col>
+      </Row>
+
+      <Row className="mt-4">
+        <Col xs={12}>
+          <KeyFeatures />
+        </Col>
+      </Row>
+
+      <Row className="mt-4">
+        <Col xs={12}>
+          <Testimonials />
+        </Col>
+      </Row>
+
       <FooterComponent />
     </Container>
   );

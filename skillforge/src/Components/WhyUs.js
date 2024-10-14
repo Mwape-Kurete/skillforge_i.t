@@ -4,10 +4,12 @@ import "../Styles/whyus.css";
 
 function WhyUs() {
   return (
-    <Row className="why-us-row">
-      <h1 className="py-5">Why Choose Us?</h1>
-      <br />
-      <Col>
+    <Row className="why-us-row text-center py-5">
+      <Col xs={12} className="mb-4">
+        <h1>Why Choose Us?</h1>
+      </Col>
+
+      <Col xs={12} md={6} className="mb-4">
         <div className="card-box">
           <div className="tools">
             <div className="circle">
@@ -27,7 +29,8 @@ function WhyUs() {
           </div>
         </div>
       </Col>
-      <Col>
+
+      <Col xs={12} md={6} className="mb-4">
         <div className="card-box">
           <div className="tools">
             <div className="circle">

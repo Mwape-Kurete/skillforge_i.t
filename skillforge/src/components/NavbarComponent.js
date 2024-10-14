@@ -1,20 +1,20 @@
-//NavbarComponent.js in src/components
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-
 import "../Styles/navbarComp.css";
 
 function NavbarComponent() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="navbar-cont">
+    <Navbar collapseOnSelect expand="lg" className="navbar-cont py-3">
       <Container>
+        <Navbar.Brand as={Link} to="/" className="navbar-brand">
+          SkillForge I.T
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            {/* Use Link for routing */}
             <Nav.Link className="nav-text" as={Link} to="/">
               Home
             </Nav.Link>

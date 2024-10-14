@@ -14,22 +14,21 @@
 .key-features-header {
   padding: 50px;
   color: rgba(141, 252, 14);
-  ext-align: center;
+  text-align: center;
 }
 
 h1 {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   font-style: italic;
-
   text-align: center;
 }
+
 .cont.col-md-6 {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-bottom: 50px;
 }
 
@@ -38,10 +37,8 @@ h1 {
   position: relative;
   width: 600px;
   height: 100px;
-
   overflow: hidden;
   text-overflow: ellipsis;
-
   padding: 50px;
   padding-bottom: 50px;
   background: linear-gradient(#fff2, transparent);
@@ -74,4 +71,61 @@ h1 {
   justify-content: center;
   align-items: center;
   color: #fff;
+}
+
+/* Responsivity for smaller screens */
+@media (max-width: 992px) {
+  .cont > .features {
+    width: 450px; /* Adjust feature box width for tablets */
+    height: 150px; /* Increase height for better readability */
+  }
+
+  .cont > .features:hover {
+    width: 450px;
+    height: 250px; /* Adjust hover effect for smaller screens */
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .key-features-header {
+    padding: 30px; /* Reduce padding for smaller screens */
+  }
+
+  .cont > .features {
+    width: 350px; /* Adjust width for mobile devices */
+    height: 120px;
+  }
+
+  .cont > .features:hover {
+    width: 350px;
+    height: 200px;
+    margin: 0 20px;
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust heading size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .key-features-header {
+    padding: 20px; /* Further reduce padding for extra-small screens */
+  }
+
+  .cont > .features {
+    width: 100%; /* Full width for small screens */
+    height: 120px;
+    padding: 20px; /* Reduce padding for small screens */
+  }
+
+  .cont > .features:hover {
+    width: 100%; /* Full width hover effect */
+    height: 180px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 20px; /* Adjust heading font size for extra-small screens */
+  }
 }

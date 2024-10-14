@@ -1,14 +1,13 @@
 import React from "react";
-
-import Card from "react-bootstrap/Card";
 import { Col, Row } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 function CourseCards() {
   return (
-    <Row className="courses-all-cont">
-      <Col md={6} className="course-col my-5">
+    <Row className="courses-all-cont justify-content-center">
+      <Col xs={12} md={6} lg={4} className="course-col my-4">
         <Card className="course-cards">
           <Card.Header>A+ Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -47,7 +46,7 @@ function CourseCards() {
         </Card>
       </Col>
 
-      <Col md={6} className="course-col  my-5">
+      <Col xs={12} md={6} lg={4} className="course-col my-4">
         <Card className="course-cards">
           <Card.Header>Python Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -83,7 +82,7 @@ function CourseCards() {
         </Card>
       </Col>
 
-      <Col md={6} className="course-col  my-5">
+      <Col xs={12} md={6} lg={4} className="course-col my-4">
         <Card className="course-cards">
           <Card.Header>React Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -118,7 +117,7 @@ function CourseCards() {
         </Card>
       </Col>
 
-      <Col md={6} className="course-col  my-5">
+      <Col xs={12} md={6} lg={4} className="course-col my-4">
         <Card className="course-cards">
           <Card.Header>ICDL Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -153,7 +152,7 @@ function CourseCards() {
         </Card>
       </Col>
 
-      <Col md={6} className="course-col  my-5">
+      <Col xs={12} md={6} lg={4} className="course-col my-4">
         <Card className="course-cards">
           <Card.Header>Java Bootcamp (4 Months)</Card.Header>
           <Card.Body>
@@ -187,7 +186,8 @@ function CourseCards() {
           </Card.Body>
         </Card>
       </Col>
-      <Col md={6} className="course-col  my-5">
+
+      <Col xs={12} md={6} lg={4} className="course-col my-4">
         <Card className="course-cards">
           <Card.Header>Project Management Bootcamp (4 Months)</Card.Header>
           <Card.Body>

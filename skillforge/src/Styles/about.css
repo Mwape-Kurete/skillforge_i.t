@@ -1,16 +1,11 @@
-.mission {
+.mission,
+.choice,
+.meet,
+.students {
   width: 80%;
-
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 55px;
-  margin-bottom: 55px;
+  margin: 55px auto; /* Centering content with automatic left and right margins */
   padding: 50px;
   border-radius: 25px;
-
-  /* bg
-  
-  rgb(141, 252, 14);*/
   background: linear-gradient(
     26deg,
     rgba(255, 255, 255, 0.069),
@@ -18,17 +13,10 @@
   );
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
-.mission > p {
-  padding-top: 15px;
-  text-align: center;
-  margin: 0 auto;
-  width: 80%;
-}
-
+.mission > p,
 .students > p {
   padding-top: 15px;
   text-align: center;
@@ -36,70 +24,37 @@
   width: 80%;
 }
 
-.choice {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  padding: 50px;
-  border-radius: 25px;
+/* Responsivity for smaller screens */
+@media (max-width: 768px) {
+  .mission,
+  .choice,
+  .meet,
+  .students {
+    width: 90%; /* Take up more width on smaller screens */
+    padding: 30px; /* Reduce padding for smaller screens */
+  }
 
-  /* bg
-  
-  rgb(141, 252, 14);*/
-  background: linear-gradient(
-    26deg,
-    rgba(255, 255, 255, 0.069),
-    rgba(0, 0, 0, 0)
-  );
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  .mission > p,
+  .students > p {
+    width: 100%; /* Make the paragraphs take full width on smaller screens */
+  }
 }
 
-.meet {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  padding: 50px;
-  border-radius: 25px;
+/* Responsivity for extra-small screens */
+@media (max-width: 576px) {
+  .mission,
+  .choice,
+  .meet,
+  .students {
+    width: 95%;
+    padding: 20px; /* Further reduce padding */
+  }
 
-  /* bg
-  
-  rgb(141, 252, 14);*/
-  background: linear-gradient(
-    26deg,
-    rgba(255, 255, 255, 0.069),
-    rgba(0, 0, 0, 0)
-  );
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-}
-
-.students {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  padding: 50px;
-  border-radius: 25px;
-
-  /* bg
-  
-  rgb(141, 252, 14);*/
-  background: linear-gradient(
-    26deg,
-    rgba(255, 255, 255, 0.069),
-    rgba(0, 0, 0, 0)
-  );
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  .mission > p,
+  .students > p {
+    width: 100%;
+    font-size: 1rem; /* Adjust text size for better readability */
+  }
 }
 
 .carousel {
@@ -120,4 +75,27 @@
   object-fit: cover;
   border-radius: 6px;
   top: 20px;
+}
+
+/* Responsivity for carousel on smaller screens */
+@media (max-width: 768px) {
+  .carousel,
+  .carousel-item {
+    width: 90%; /* Make carousel take up more width */
+  }
+
+  .caro-image {
+    height: 300px; /* Reduce height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel,
+  .carousel-item {
+    width: 95%; /* Make carousel full-width on extra-small screens */
+  }
+
+  .caro-image {
+    height: 250px; /* Further reduce height for extra-small screens */
+  }
 }

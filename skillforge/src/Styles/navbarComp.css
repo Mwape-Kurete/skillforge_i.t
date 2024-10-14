@@ -5,7 +5,17 @@
   margin-top: 30px;
   border-radius: 45px;
   padding: 10px;
-  background-color: rgb(141, 252, 14);
+  background-color: rgb(141, 252, 14) !important;
+}
+
+.navbar-brand {
+  font-family: "Jersey 20", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar-brand:hover {
+  color: black !important;
 }
 
 .nav-text {
