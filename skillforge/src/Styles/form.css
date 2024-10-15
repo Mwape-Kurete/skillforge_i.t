@@ -23,6 +23,14 @@ form {
   font-weight: 600;
 }
 
+textarea::placeholder,
+input::placeholder {
+  color: #a2a2a2 !important;
+  font-size: 16px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+}
+
 select.form-select,
 textarea.form-control,
 input.form-control {
@@ -47,10 +55,13 @@ textarea.form-control {
 select.form-select:focus,
 textarea.form-control:focus,
 input.form-control:focus {
-  box-shadow: 0 0px 15px 0 #e81aff86;
+  box-shadow: 0 0px 5px 0 rgba(141, 243, 24, 0.632);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
+  background-color: transparent !important;
+  color: white !important;
+  border: none;
 }
 
 option {
@@ -58,8 +69,9 @@ option {
   background-color: #1e1e1e !important;
 }
 
-option:hover {
-  background-color: rgba(141, 252, 14) !important;
+select > option:hover {
+  background-color: white !important;
+  color: #1e1e1e !important;
 }
 
 .enroll-now-cta {
@@ -133,4 +145,51 @@ option:hover {
   textarea.form-control {
     height: 60px; /* Reduce textarea height for small screens */
   }
+}
+
+.modal-content {
+  background: linear-gradient(
+    26deg,
+    rgba(255, 255, 255, 0.069),
+    rgba(0, 0, 0, 0)
+  ) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+}
+
+.modal-header {
+  font-family: "Jersey 20", system-ui;
+  font-weight: 400;
+}
+
+.modal-body {
+  font-size: 16px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+}
+
+button.btn-close {
+  color: #8dfc0e !important;
+  --bs-btn-close-color: #8dfc0e !important;
+}
+
+.btn.exit-modal {
+  background-color: #1e1e1e;
+  color: #8dfc0e;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid #8dfc0e;
+  transition: all 500ms;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+}
+
+.btn.exit-modal:hover {
+  background-color: #8dfc0e;
+  color: #1e1e1e;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid #8dfc0e;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
 }

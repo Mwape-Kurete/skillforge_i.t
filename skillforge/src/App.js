@@ -1,8 +1,5 @@
-//App.js in src
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 import Courses from "./Pages/Courses";
@@ -16,16 +13,16 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Send pageview to Google Analytics on route change
+    // Push page view event to the GTM dataLayer
     const handleRouteChange = (url) => {
-      window.gtag("config", "G-0SW4M3T4ZQ", {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "pageview",
         page_path: url,
       });
     };
 
-    handleRouteChange(location.pathname + location.search);
-
-    // Trigger when the route changes
+    handleRouteChange(location.pathname + location.search); // Fire on route change
   }, [location]);
 
   return (
