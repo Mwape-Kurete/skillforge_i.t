@@ -21,10 +21,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
-    <!--META FOR ANALYTICS START-->
+    <!-- Favicon for all browsers -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/skillforge_it_logo.svg?v=2"
+      sizes="32x32"
+    />
+    <!-- Apple Touch Icon for iOS devices -->
+    <link
+      rel="apple-touch-icon"
+      href="%PUBLIC_URL%/skillforge_it_logo.svg?v=2"
+    />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--META FOR ANALYTICS START-->
+    <link
+      rel="alternate"
+      href="https://www.skillforge-it.co.za"
+      hreflang="en-za"
+    />
+
+    <meta name="robots" content="index, follow" />
+
     <meta
       name="description"
       content="SkillForge IT Bootcamp: Learn A+, Python, React, Java, and more."
@@ -33,7 +51,6 @@
       name="keywords"
       content="IT Bootcamp, A+, Python, React, Java, Project Management, ICDL"
     />
-    <meta name="robots" content="index, follow" />
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="SkillForge IT Bootcamp" />
@@ -43,6 +60,10 @@
     />
     <meta property="og:url" content="https://www.skillforge-it.co.za" />
     <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.skillforge-it.co.za//skillforge_it_logo.svg?v=2"
+    />
 
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -51,27 +72,33 @@
       name="twitter:description"
       content="Master essential IT skills with our intensive bootcamps."
     />
+    <meta
+      name="twitter:image"
+      content="https://www.skillforge-it.co.za//skillforge_it_logo.svg?v=2"
+    />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.skillforge-it.co.za" />
 
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "SkillForge IT Bootcamp",
+        "description": "SkillForge IT Bootcamp offers courses in A+, Python, React, and more.",
+        "url": "https://www.skillforge-it.co.za"
+      }
+    </script>
     <!--META FOR ANALYTICS END-->
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>SkillForge I.T</title>
   </head>
   <body>
